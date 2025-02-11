@@ -42,7 +42,7 @@ export default function App() {
 			{/* Heading */}
 			<div className="h-auto flex items-center justify-center">
 				<div className="w-full mt-10 text-center">
-					<h1 className="text-5xl sm:text-7xl text-white">
+					<h1 className="text-7xl text-white">
 						<span className="text-orange-400 font-primary font-semibold">
 							HALAL
 						</span>
@@ -71,22 +71,22 @@ export default function App() {
 								for suhoor and iftar effortless. Don't miss; order now and save
 								big!
 							</p>
-							<h3 className="text-4xl sm:text-6xl font-primary">
-								<div className="flex">
+							<h3 className="lg:text-6xl text-4xl font-primary">
+								<div className="grid grid-cols-2 gap-4 lg:flex lg:flex-row lg:gap-10 text-center">
 									<div>
-										<div className="text-center">{days}</div>
+										<div className="text-4xl">{days}</div>
 										<div>Days</div>
 									</div>
-									<div className="ml-10">
-										<div className="text-center">{hours}</div>
+									<div>
+										<div className="text-4xl">{hours}</div>
 										<div>Hours</div>
 									</div>
-									<div className="ml-10">
-										<div className="text-center">{minutes}</div>
+									<div>
+										<div className="text-4xl">{minutes}</div>
 										<div>Minutes</div>
 									</div>
-									<div className="ml-10">
-										<div className="text-center">{seconds}</div>
+									<div>
+										<div className="text-4xl">{seconds}</div>
 										<div>Seconds</div>
 									</div>
 								</div>
@@ -208,7 +208,7 @@ export default function App() {
 					<p className="text-white text-base mt-5">
 						Copyright {new Date().getFullYear()} All Rights Reserved
 					</p>
-					<p className = "my-2">
+					<p className="my-2">
 						<small>Website developed by Hairum Qureshi</small>
 					</p>
 				</footer>
