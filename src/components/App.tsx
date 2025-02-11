@@ -1,7 +1,7 @@
 import "../css/index.css";
 import "../css/imports.css";
 import { useEffect, useState } from "react";
-import background from "../assets/background.png";
+// import background from "../assets/background.png";
 
 export default function App() {
 	const [days, setDays] = useState(0);
