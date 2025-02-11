@@ -37,7 +37,7 @@ export default function App() {
 	return (
 		<div
 			className="w-full min-h-screen bg-black text-white"
-			style={{ backgroundImage: `url(${background})` }}
+			// style={{ backgroundImage: `url(${background})` }}
 		>
 			{/* Heading */}
 			<div className="h-auto flex items-center justify-center">
