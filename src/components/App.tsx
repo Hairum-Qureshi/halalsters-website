@@ -56,7 +56,7 @@ export default function App() {
 						<span className="text-green-500">Pakistani</span> food
 					</p>
 					<div className="flex items-center justify-center text-center mt-10">
-						<h2 className="relative font-semibold text-2xl mx-20 font-quaternary bg-gradient-to-r from-red-500 via-orange-400 to-sky-500 bg-clip-text text-transparent select-none">
+						<h2 className="relative font-semibold text-2xl lg:mx-20 mx-10 font-quaternary bg-gradient-to-r from-red-500 via-orange-400 to-sky-500 bg-clip-text text-transparent select-none">
 							Halalster's:{" "}
 							<span className="from-red-500 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
 								Not Halal Sisters
