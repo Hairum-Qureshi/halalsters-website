@@ -194,8 +194,7 @@ export default function App() {
 							<p>6. All products are 100% halal certified</p>
 							<br />
 							<p>
-								7. Currently, we only deliver within an 7-mile radius of Newark,
-								DE, including areas like Bear, Glasgow, Christiana, and parts of
+								7. Currently, we only deliver within Delaware, specifically within a 7-mile radius of Newark, including areas like Bear, Glasgow, Christiana, and parts of
 								Middletown.
 							</p>
 							<br />
