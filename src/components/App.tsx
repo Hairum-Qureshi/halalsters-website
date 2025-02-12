@@ -55,6 +55,29 @@ export default function App() {
 						Authentic, cheap, tasty, & hand-made&nbsp;
 						<span className="text-green-500">Pakistani</span> food
 					</p>
+					<div className="flex items-center justify-center text-center mt-10">
+						<h2 className="relative font-semibold text-2xl mx-20 font-quaternary bg-gradient-to-r from-red-500 via-orange-400 to-sky-500 bg-clip-text text-transparent select-none">
+							Halalster's:{" "}
+							<span className="from-red-500 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
+								Not Halal Sisters
+							</span>
+							, But Samosas So Good, They'll Make You Forget
+							<span className="from-orange-400 to-orange-300 bg-gradient-to-r bg-clip-text text-transparent">
+								{" "}
+								Chai
+							</span>
+							—and Feel Like
+							<span className="from-sky-400 to-sky-500 bg-gradient-to-r bg-clip-text text-transparent">
+								{" "}
+								Family
+							</span>
+							!
+						</h2>
+						<span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-red-500 via-orange-400 to-sky-500 bg-clip-text text-2xl font-extrabold text-transparent select-none">
+							Halalster's: Not Halal Sisters, But Samosas So Good, They'll Make
+							You Forget Chai—And Feel Like Family!
+						</span>
+					</div>
 				</div>
 			</div>
 			{/* Countdown */}
@@ -64,7 +87,7 @@ export default function App() {
 						<h1 className="text-6xl">HAPPY RAMADAN!</h1>
 					) : (
 						<>
-							<p className="font-secondary text-lg lg:text-xl text-center -mt-36 mb-10 lg:mx-44 lg:text-orange-500 text-white">
+							<p className="font-secondary text-lg lg:text-xl text-center -mt-36 mb-10 lg:mx-44 lg:text-orange-500 text-orange-500">
 								Take advantage of our special Ramadan offer and stock up for
 								your iftars with huge portions at unbeatable prices! Enjoy
 								delicious, handmade Pakistani frozen foods that make prepping
@@ -200,7 +223,8 @@ export default function App() {
 				</div> */}
 				<footer className="w-full p-2 mt-14 bg-sky-950 text-center">
 					<h3 className="text-5xl text-sky-400 font-tertiary mt-5">
-						Hungry? Call (or text) Mohid at (302)-344-7160
+						Hungry? Call (or text) Mohid at (302)-344-7160 <br /> or Hairum at
+						(302)-480-0559
 					</h3>
 					<h3 className="text-3xl text-sky-300 font-tertiary">
 						WE OFFER FREE DELIVERY!
