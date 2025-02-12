@@ -200,7 +200,13 @@ export default function App() {
 							</p>
 							<br />
 							<p>
-								8. If you live 8-10 miles and are interested in ordering, there will be an extra cost of $4.63 for delivery charges
+								8. If you live 8-10 miles and are interested in ordering, there
+								will be an extra cost of $4.63 for delivery charges
+							</p>
+							<br />
+							<p>
+								9. We do not do same-day delivery. Please order at most a day
+								ahead for your orders!
 							</p>
 						</div>
 					</div>
@@ -231,8 +237,9 @@ export default function App() {
 					<h3 className="text-3xl text-sky-300 font-tertiary">
 						WE OFFER FREE DELIVERY!*
 					</h3>
-					<p className = "text-xs font-secondary">
-						Unless you live outside the 7 mile radius, additional delivery charges will apply. See disclaimer #8 for more details*	
+					<p className="text-xs font-secondary">
+						Unless you live outside the 7 mile radius, additional delivery
+						charges will apply. See disclaimer #8 for more details*
 					</p>
 					<p className="text-white text-base mt-5">
 						Copyright {new Date().getFullYear()} All Rights Reserved
