@@ -2,6 +2,7 @@ import "../css/index.css";
 import "../css/imports.css";
 import { useEffect, useState } from "react";
 // import background from "../assets/background.png";
+import logo from "../assets/logo.png";
 
 export default function App() {
 	const [days, setDays] = useState(0);
@@ -42,6 +43,7 @@ export default function App() {
 			{/* Heading */}
 			<div className="h-auto flex items-center justify-center">
 				<div className="w-full mt-10 text-center">
+					{/* <img src={logo} alt="Logo image" /> */}
 					<h1 className="text-7xl text-white">
 						<span className="text-orange-400 font-primary font-semibold">
 							HALAL
@@ -222,7 +224,6 @@ export default function App() {
 				<footer className="relative w-full p-2 mt-14 bg-sky-950 text-center border-t-2 border-t-sky-500">
 					{/* Sky Blue Glow at the Top */}
 					<div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-20 bg-gradient-to-b from-sky-400 to-transparent blur-3xl opacity-60"></div>
-
 					<h3 className="text-5xl text-sky-400 font-tertiary mt-5">
 						Hungry? Call (or text) Mohid at (302)-344-7160 <br /> or Hairum at
 						(302)-480-0559
