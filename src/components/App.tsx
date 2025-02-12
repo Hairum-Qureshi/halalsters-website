@@ -200,7 +200,7 @@ export default function App() {
 							<p>6. All products are 100% halal certified</p>
 							<br />
 							<p>
-								7. Currently, we only deliver in New Castle County, Delaware
+								7. Currently, we only deliver within an 8-mile radius of Newark, DE, including areas like Bear, Glasgow, Christiana, and parts of Middletown.
 							</p>
 						</div>
 					</div>
