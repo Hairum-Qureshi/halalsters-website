@@ -135,25 +135,25 @@ export default function App() {
 						<div className="font-secondary text-lg sm:text-2xl">
 							<div className="flex flex-col sm:flex-row justify-between border-b pb-2">
 								<h3>20 piece potato samosas</h3>
-								<h3 className="lg:text-white text-orange-500 font-semibold">
+								<h3 className="text-orange-500 font-semibold">
 									$4.99
 								</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece chicken and vegetable samosas</h3>
-								<h3 className="lg:text-white text-orange-500 font-semibold">
+								<h3 className="text-orange-500 font-semibold">
 									$8.99
 								</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece chicken and vegetable rolls</h3>
-								<h3 className="lg:text-white text-orange-500 font-semibold">
+								<h3 className="text-orange-500 font-semibold">
 									$10.49
 								</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece potato rolls</h3>
-								<h3 className="lg:text-white text-orange-500 font-semibold">
+								<h3 className="text-orange-500 font-semibold">
 									$5.49
 								</h3>
 							</div>
