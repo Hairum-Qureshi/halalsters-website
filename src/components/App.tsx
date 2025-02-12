@@ -97,19 +97,19 @@ export default function App() {
 							<h3 className="lg:text-6xl text-4xl font-primary">
 								<div className="grid grid-cols-2 gap-4 lg:flex lg:flex-row lg:gap-10 text-center">
 									<div>
-										<div className="text-4xl">{days}</div>
+										<div>{days}</div>
 										<div>Days</div>
 									</div>
 									<div>
-										<div className="text-4xl">{hours}</div>
+										<div>{hours}</div>
 										<div>Hours</div>
 									</div>
 									<div>
-										<div className="text-4xl">{minutes}</div>
+										<div>{minutes}</div>
 										<div>Minutes</div>
 									</div>
 									<div>
-										<div className="text-4xl">{seconds}</div>
+										<div>{seconds}</div>
 										<div>Seconds</div>
 									</div>
 								</div>
