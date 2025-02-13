@@ -61,17 +61,17 @@ export default function App() {
 						<h2 className="relative font-semibold text-2xl lg:mx-20 mx-10 font-quaternary bg-gradient-to-r from-red-500 via-orange-400 to-sky-500 bg-clip-text text-transparent select-none">
 							Halalster's:{" "}
 							<span className="from-red-500 to-red-400 bg-gradient-to-r bg-clip-text text-transparent">
-								Not Halal Sisters
+								Samosas So Good
 							</span>
-							, But Samosas So Good, They'll Make You Forget
+							, Your Inner Desi Will Demand
 							<span className="from-orange-400 to-orange-300 bg-gradient-to-r bg-clip-text text-transparent">
 								{" "}
 								Chai
 							</span>
-							—and Feel Like
+							—And a
 							<span className="from-sky-400 to-sky-500 bg-gradient-to-r bg-clip-text text-transparent">
 								{" "}
-								Family
+								Round Two
 							</span>
 							!
 						</h2>
@@ -194,8 +194,9 @@ export default function App() {
 							<p>6. All products are 100% halal certified</p>
 							<br />
 							<p>
-								7. Currently, we only deliver within Delaware, specifically within a 7-mile radius of Newark, including areas like Bear, Glasgow, Christiana, and parts of
-								Middletown.
+								7. Currently, we only deliver within Delaware, specifically
+								within a 7-mile radius of Newark, including areas like Bear,
+								Glasgow, Christiana, and parts of Middletown.
 							</p>
 							<br />
 							<p>
