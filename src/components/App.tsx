@@ -72,8 +72,8 @@ export default function App() {
 							<span className="from-sky-400 to-sky-500 bg-gradient-to-r bg-clip-text text-transparent">
 								{" "}
 								Round Two
-							</span>$
-							!
+							</span>
+							$ !
 						</h2>
 						<span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-red-500 via-orange-400 to-sky-500 bg-clip-text text-2xl font-extrabold text-transparent select-none">
 							Halalster's: Not Halal Sisters, But Samosas So Good, They'll Make
@@ -86,7 +86,9 @@ export default function App() {
 			<div className="w-full h-auto">
 				<div className="p-3 mt-40 flex flex-col items-center justify-center">
 					{days === 0 && hours === 0 && minutes === 0 && seconds === 0 ? (
-						<h1 className="text-6xl">HAPPY RAMADAN!</h1>
+						<h1 className="text-6xl -mt-30 text-yellow-400 font-quinquenary drop-shadow-[0_0_10px_rgba(255,255,0,0.8)] animate-pulse">
+							RAMADAN MUBARAK!
+						</h1>
 					) : (
 						<>
 							<p className="font-secondary text-lg lg:text-xl text-center -mt-36 mb-10 lg:mx-44 lg:text-orange-500 text-orange-500">
@@ -138,14 +140,6 @@ export default function App() {
 							<div className="flex flex-col sm:flex-row justify-between border-b pb-2">
 								<h3>20 piece potato samosas</h3>
 								<h3 className="text-orange-500 font-semibold">$4.99</h3>
-							</div>
-							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
-								<h3>20 piece chicken and vegetable samosas</h3>
-								<h3 className="text-orange-500 font-semibold">$x.xx</h3>
-							</div>
-							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
-								<h3>20 piece chicken and vegetable rolls</h3>
-								<h3 className="text-orange-500 font-semibold">$x.xx</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece potato rolls</h3>
