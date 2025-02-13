@@ -73,7 +73,7 @@ export default function App() {
 								{" "}
 								Round Two
 							</span>
-							$ !
+							!
 						</h2>
 						<span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-red-500 via-orange-400 to-sky-500 bg-clip-text text-2xl font-extrabold text-transparent select-none">
 							Halalster's: Not Halal Sisters, But Samosas So Good, They'll Make
