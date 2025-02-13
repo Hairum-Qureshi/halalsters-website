@@ -5,41 +5,44 @@ import { useEffect, useState } from "react";
 // import logo from "../assets/logo.png";
 
 export default function App() {
+	const currentDate = Number(new Date());
+	const ramadan = Number(new Date("2/28/2025"));
+  
+	// Difference is stored in the state
+	const [difference, setDifference] = useState(ramadan - currentDate);
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
-
-	const currentDate = Number(new Date());
-	const ramadan = Number(new Date("2/28/2025"));
-
-	const [difference, setDifference] = useState(ramadan - currentDate);
-
+  
 	function ramadanCountdown() {
-		// const currentDate = Number(new Date());
-		// const ramadan = Number(new Date("2/28/2025"));
-		const difference = ramadan - currentDate;
-		if (difference > 0) {
-			const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-			const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-			const minutes = Math.floor((difference / (1000 * 60)) % 60);
-			const seconds = Math.floor((difference / 1000) % 60);
-
-			setDays(days);
-			setHours(hours);
-			setMinutes(minutes);
-			setSeconds(seconds);
-			setDifference(difference);
+	  const newDifference = ramadan - Number(new Date()); // Calculate the new difference
+  
+	  if (newDifference > 0) {
+		const newDays = Math.floor(newDifference / (1000 * 60 * 60 * 24));
+		const newHours = Math.floor((newDifference / (1000 * 60 * 60)) % 24);
+		const newMinutes = Math.floor((newDifference / (1000 * 60)) % 60);
+		const newSeconds = Math.floor((newDifference / 1000) % 60);
+  
+		// Update the state if the difference has changed
+		if (newDifference !== difference) {
+		  setDifference(newDifference);
+		  setDays(newDays);
+		  setHours(newHours);
+		  setMinutes(newMinutes);
+		  setSeconds(newSeconds);
 		}
+	  }
 	}
-
+  
 	useEffect(() => {
-		const interval = setInterval(() => {
-			ramadanCountdown();
-		}, 1000);
-
-		return () => clearInterval(interval);
-	}, [difference]);
+	  const interval = setInterval(() => {
+		ramadanCountdown(); // Call the countdown function on each interval
+	  }, 1000);
+  
+	  return () => clearInterval(interval); // Cleanup on unmount
+	}, [difference]); // Re-run the effect when the difference changes
+  
 
 	return (
 		<div
