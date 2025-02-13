@@ -240,14 +240,14 @@ export default function App() {
 					<h3 className="text-3xl text-sky-300 font-tertiary">
 						WE OFFER FREE DELIVERY!*
 					</h3>
-					<p className="text-xs font-secondary">
+					<p className="text-xs font-sexenary">
 						Unless you live outside the 7 mile radius, additional delivery
 						charges will apply. See disclaimer #8 for more details*
 					</p>
-					<p className="text-white text-base mt-5">
+					<p className="text-white text-base mt-5 font-sexenary font-semibold">
 						Copyright {new Date().getFullYear()} All Rights Reserved
 					</p>
-					<p className="my-2">
+					<p className="my-2 font-sexenary font-semibold">
 						<small>Website developed by Hairum Qureshi</small>
 					</p>
 				</footer>
