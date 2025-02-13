@@ -64,7 +64,7 @@ export default function App() {
 								Samosas So Good
 							</span>
 							, Your Inner Desi Will Demand
-							<span className="from-orange-400 to-orange-300 bg-gradient-to-r bg-clip-text text-transparent">
+							<span className="from-orange-500 to-orange-300 bg-gradient-to-r bg-clip-text text-transparent">
 								{" "}
 								Chai
 							</span>
@@ -72,7 +72,7 @@ export default function App() {
 							<span className="from-sky-400 to-sky-500 bg-gradient-to-r bg-clip-text text-transparent">
 								{" "}
 								Round Two
-							</span>
+							</span>$
 							!
 						</h2>
 						<span className="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-red-500 via-orange-400 to-sky-500 bg-clip-text text-2xl font-extrabold text-transparent select-none">
@@ -141,11 +141,11 @@ export default function App() {
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece chicken and vegetable samosas</h3>
-								<h3 className="text-orange-500 font-semibold">$8.99</h3>
+								<h3 className="text-orange-500 font-semibold">$x.xx</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece chicken and vegetable rolls</h3>
-								<h3 className="text-orange-500 font-semibold">$10.49</h3>
+								<h3 className="text-orange-500 font-semibold">$x.xx</h3>
 							</div>
 							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
 								<h3>20 piece potato rolls</h3>
