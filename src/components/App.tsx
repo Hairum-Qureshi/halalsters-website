@@ -13,7 +13,7 @@ export default function App() {
 	const currentDate = Number(new Date());
 	const ramadan = Number(new Date("2/28/2025"));
 
-	const [difference, setDifference] = useState(currentDate - ramadan);
+	const [difference, setDifference] = useState(ramadan - currentDate);
 
 	function ramadanCountdown() {
 		// const currentDate = Number(new Date());
@@ -31,8 +31,6 @@ export default function App() {
 			setSeconds(seconds);
 			setDifference(difference);
 		}
-
-
 	}
 
 	useEffect(() => {
@@ -41,7 +39,7 @@ export default function App() {
 		}, 1000);
 
 		return () => clearInterval(interval);
-	}, []);
+	}, [difference]);
 
 	return (
 		<div
@@ -93,7 +91,7 @@ export default function App() {
 			{/* Countdown */}
 			<div className="w-full h-auto">
 				<div className="p-3 mt-40 flex flex-col items-center justify-center">
-					{difference === 0 ? (
+					{difference <= 0 ? (
 						<h1 className="text-6xl -mt-30 text-yellow-400 font-quinquenary drop-shadow-[0_0_10px_rgba(255,255,0,0.8)] animate-pulse">
 							RAMADAN MUBARAK!
 						</h1>
