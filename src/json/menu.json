@@ -1,26 +1,26 @@
 [
 	{
-		"item_no": "1",
+		"item_no": 1,
 		"item_name": "15 Piece Frozen Potato Sticks",
 		"item_price": "$9.99"
 	},
     {
-        "item_no": "2",
+        "item_no": 2,
         "item_name": "20 Piece Frozen Potato Samosas",
         "item_price": "$4.99"
     },
     {
-        "item_no": "3",
+        "item_no": 3,
         "item_name": "20 Piece Frozen Chicken Vegetable Samosas",
         "item_price": "$9.99"
     },
     {
-        "item_no": "4",
+        "item_no": 4,
         "item_name": "20 Piece Frozen Chicken Vegetable Spring Rolls",
         "item_price": "$13.99"
     },
     {
-        "item_no": "5",
+        "item_no": 5,
         "item_name": "20 Piece Frozen Potato Spring Rolls",
         "item_price": "$7.99"
     }

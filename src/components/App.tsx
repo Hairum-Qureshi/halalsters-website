@@ -44,6 +44,12 @@ export default function App() {
 		return () => clearInterval(interval); // Cleanup on unmount
 	}, [difference]); // Re-run the effect when the difference changes
 
+	interface MenuItem {
+		item_no: number,
+		item_name: string,
+		item_price: string
+	}
+
 	return (
 		<div
 			className="w-full min-h-screen bg-black text-white"
@@ -146,7 +152,7 @@ export default function App() {
 				<div className="mt-8 flex items-center justify-center">
 					<div className="lg:w-1/2 w-full lg:mx-0 mx-10 h-auto">
 						<div className="font-secondary text-lg sm:text-2xl">
-							{menuItems.map(menuItem => {
+							{menuItems.map((menuItem: MenuItem) => {
 								return (
 									<div
 										className="flex flex-col sm:flex-row justify-between border-b py-2"
