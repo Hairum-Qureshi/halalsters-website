@@ -1,48 +1,48 @@
 import "../css/index.css";
 import "../css/imports.css";
 import { useEffect, useState } from "react";
+import menuItems from "../json/menu.json";
 // import background from "../assets/background.png";
 // import logo from "../assets/logo.png";
 
 export default function App() {
 	const currentDate = Number(new Date());
 	const ramadan = Number(new Date("2/28/2025"));
-  
+
 	// Difference is stored in the state
 	const [difference, setDifference] = useState(ramadan - currentDate);
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
-  
+
 	function ramadanCountdown() {
-	  const newDifference = ramadan - Number(new Date()); // Calculate the new difference
-  
-	  if (newDifference > 0) {
-		const newDays = Math.floor(newDifference / (1000 * 60 * 60 * 24));
-		const newHours = Math.floor((newDifference / (1000 * 60 * 60)) % 24);
-		const newMinutes = Math.floor((newDifference / (1000 * 60)) % 60);
-		const newSeconds = Math.floor((newDifference / 1000) % 60);
-  
-		// Update the state if the difference has changed
-		if (newDifference !== difference) {
-		  setDifference(newDifference);
-		  setDays(newDays);
-		  setHours(newHours);
-		  setMinutes(newMinutes);
-		  setSeconds(newSeconds);
+		const newDifference = ramadan - Number(new Date()); // Calculate the new difference
+
+		if (newDifference > 0) {
+			const newDays = Math.floor(newDifference / (1000 * 60 * 60 * 24));
+			const newHours = Math.floor((newDifference / (1000 * 60 * 60)) % 24);
+			const newMinutes = Math.floor((newDifference / (1000 * 60)) % 60);
+			const newSeconds = Math.floor((newDifference / 1000) % 60);
+
+			// Update the state if the difference has changed
+			if (newDifference !== difference) {
+				setDifference(newDifference);
+				setDays(newDays);
+				setHours(newHours);
+				setMinutes(newMinutes);
+				setSeconds(newSeconds);
+			}
 		}
-	  }
 	}
-  
+
 	useEffect(() => {
-	  const interval = setInterval(() => {
-		ramadanCountdown(); // Call the countdown function on each interval
-	  }, 1000);
-  
-	  return () => clearInterval(interval); // Cleanup on unmount
+		const interval = setInterval(() => {
+			ramadanCountdown(); // Call the countdown function on each interval
+		}, 1000);
+
+		return () => clearInterval(interval); // Cleanup on unmount
 	}, [difference]); // Re-run the effect when the difference changes
-  
 
 	return (
 		<div
@@ -146,14 +146,19 @@ export default function App() {
 				<div className="mt-8 flex items-center justify-center">
 					<div className="lg:w-1/2 w-full lg:mx-0 mx-10 h-auto">
 						<div className="font-secondary text-lg sm:text-2xl">
-							<div className="flex flex-col sm:flex-row justify-between border-b pb-2">
-								<h3>20 piece potato samosas</h3>
-								<h3 className="text-orange-500 font-semibold">$4.99</h3>
-							</div>
-							<div className="flex flex-col sm:flex-row justify-between border-b py-2">
-								<h3>20 piece potato rolls</h3>
-								<h3 className="text-orange-500 font-semibold">$5.49</h3>
-							</div>
+							{menuItems.map(menuItem => {
+								return (
+									<div
+										className="flex flex-col sm:flex-row justify-between border-b py-2"
+										key={menuItem.item_no}
+									>
+										<h3>{menuItem.item_name}</h3>
+										<h3 className="text-orange-500 font-semibold">
+											{menuItem.item_price}
+										</h3>
+									</div>
+								);
+							})}
 						</div>
 						<div className="text-center font-secondary text-base sm:text-xl my-5 text-green-500">
 							<h3>
@@ -174,7 +179,7 @@ export default function App() {
 						<div className="lg:w-1/2 lg:mx-0 mx-10 w-full mt-10 font-secondary text-xl">
 							<p>
 								1. Please follow proper cooking instructions to ensure food
-								safety. Undercooked samosas may pose a health risk.
+								safety. Undercooked food may pose a health risk.
 							</p>
 							<br />
 							<p>
