@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Countdown() {
 	const currentDate = Number(new Date());
-	const ramadan = Number(new Date("2/28/2025"));
+	const ramadan = Number(new Date("2/29/2025"));
 
 	// Difference is stored in the state
 	const [difference, setDifference] = useState(ramadan - currentDate);
@@ -42,7 +42,7 @@ export default function Countdown() {
 	return (
 		<div className="p-3 mt-40 flex flex-col items-center justify-center">
 			{difference <= 0 ? (
-				<h1 className="text-6xl -mt-30 text-yellow-400 font-quinquenary drop-shadow-[0_0_10px_rgba(255,255,0,0.8)] animate-pulse">
+				<h1 className="text-6xl -mt-30 text-yellow-400 font-quinquenary drop-shadow-[0_0_10px_rgba(255,255,0,0.8)] animate-pulse text-center">
 					RAMADAN MUBARAK!
 				</h1>
 			) : (
